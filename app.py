@@ -7,6 +7,8 @@ from azure.ai.projects import AIProjectClient
 from azure.ai.projects.models import MessageRole
 from datetime import datetime
 
+port = int(os.environ.get("PORT", 8080))
+
 # Initialize Azure AI Project Client
 client = AIProjectClient(
     endpoint=os.getenv("AIPROJECT_ENDPOINT"),

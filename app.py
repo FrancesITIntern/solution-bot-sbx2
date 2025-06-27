@@ -45,7 +45,7 @@ async def on_chat_start():
         except Exception:
             pass
 
-        await cl.Message(f"✅ Connected to Azure Agent: **{agent_name}** (ID: {AGENT_ID})").send()
+        await cl.Message(f"✅ Connected to Azure Agent").send()
 
     except Exception as e:
         await cl.Message(f"❌ Failed to connect to Azure Agent.\nError: {str(e)}").send()

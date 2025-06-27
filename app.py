@@ -1,15 +1,11 @@
 import os
 import time
 import json
-from dotenv import load_dotenv
 import chainlit as cl
 from azure.identity import DefaultAzureCredential
 from azure.ai.projects import AIProjectClient
 from azure.ai.projects.models import MessageRole
 from datetime import datetime
-
-# Load environment variables from .env
-load_dotenv()
 
 # Initialize Azure AI Project Client
 client = AIProjectClient(
